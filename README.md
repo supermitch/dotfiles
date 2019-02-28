@@ -1,7 +1,7 @@
 Supermitch .dotfiles
 ===================
 
-🛠 Tool Mastery Is Next To Godliness.
+Tool Mastery Is Next To Godliness.
 
 🔗 Symlinker
 -------------
@@ -25,3 +25,12 @@ Run `python fresher.py` to automatically do a ton of things you've done 100 time
 * https://github.com/vim-python/python-syntax - Improved Python syntax highlighting
 * https://github.com/sindresorhus/pure - ZSH pure theme
 * https://github.com/zsh-users/zsh-syntax-highlighting - ZSH syntax highlighting
+
+🛠 Manual Install
+-----------------
+
+* Install Iterm - download DMG
+* Install homebrew - run bash script
+* Install updated git
+* Install pyenv
+* Clone this repo

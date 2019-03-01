@@ -36,3 +36,4 @@ Run `python fresher.py` to automatically do a ton of things you've done 100 time
 * Install pyenv - https://github.com/pyenv/pyenv
 * Install VS Code - https://code.visualstudio.com/download
 * Install MacVim - https://github.com/macvim-dev/macvim/releases
+* Install [rbenv](https://github.com/rbenv/rbenv) - `brew install rbenv`

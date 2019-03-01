@@ -29,8 +29,10 @@ Run `python fresher.py` to automatically do a ton of things you've done 100 time
 🛠 Manual Install
 -----------------
 
-* Install Iterm - download DMG
-* Install homebrew - run bash script
-* Install updated git
-* Install pyenv
+* Install Iterm - https://www.iterm2.com/downloads.html
+* Install homebrew - https://brew.sh/
+* Install updated Git
 * Clone this repo
+* Install pyenv - https://github.com/pyenv/pyenv
+* Install VS Code - https://code.visualstudio.com/download
+* Install MacVim - https://github.com/macvim-dev/macvim/releases

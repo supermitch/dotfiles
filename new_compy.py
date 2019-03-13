@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-""" This program installs everything you need to make a computer not suck. """
+""" This program installs everything you need to make a computer useful. """
 
 import os
 import subprocess

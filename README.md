@@ -14,10 +14,10 @@ The script will create backups of existing files, and skip any existing symlinks
 
 * Fix .zshrc, .bashrc, .profile, .alias nightmare
 
-✨ Fresher 
------------
+✨ New Compy 386 
+-----------------
 
-Run `python fresher.py` to automatically do a ton of things you've done 100 times.
+Run `python new_compy.py` to automatically do a ton of things you've done 100 times.
 
 #### TODO
 

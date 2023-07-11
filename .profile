@@ -1,26 +1,3 @@
-# Add my uersonal bins
-export PATH="$HOME/code/bin:$PATH"
-# Add NPM
-export PATH="$HOME/.npm/bin:$PATH"
-# Homebrew? sbin?
-export PATH="/usr/local/sbin:$PATH"
-export PATH="/usr/local/bin:$PATH"
-
-# Pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
-
-# Apps
-# export PATH="$HOME/Library/Haskell/bin:$PATH"
-# export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
-# export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
-
-# Scala
-# export SCALA_HOME="/usr/local/share/scala"
-# export PATH="$SCALA_HOME/bin:$PATH"
-# export PATH="/usr/local/activator-dist-1.3.5:$PATH"
-
 export EDITOR=vim
 export LESS=eFRX  # Super less mode
 
@@ -82,5 +59,3 @@ agm () { ag "<<<<<<<" | less -SRi; } # Forgotten merge conflicts
 
 # Create a folder and then move into it
 mkcd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
-
-eval "$(rbenv init -)"

@@ -9,16 +9,17 @@ Plugin 'gmarik/Vundle.vim'  " Vundle itself
 Plugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
 Plugin 'rking/ag.vim' " Silver Searcher
-Plugin 'scrooloose/nerdtree'
 Plugin 'editorconfig/editorconfig-vim'  " editorconfig for vim
+" Plugin 'rizzatti/dash.vim'  " Dash integration
+Plugin 'jtratner/vim-flavored-markdown'  " Github markdown
+Plugin 'AndrewRadev/linediff.vim'  " Diff two blocks of text
+Plugin 'tpope/vim-endwise' " Ruby end blocks
+Bundle 'vim-ruby/vim-ruby'
 Plugin 'scrooloose/syntastic'  " Linter
 Plugin 'jelera/vim-javascript-syntax'  " better javascript syntax
 Plugin 'shutnik/jshint2.vim'  " JShint integration
-Plugin 'rizzatti/dash.vim'  " Dash integration
-Plugin 'raichoo/haskell-vim'  " Haskell syntax
-Plugin 'derekwyatt/vim-scala'  " Scala stuff
-Plugin 'jtratner/vim-flavored-markdown'  " Github markdown
-Plugin 'AndrewRadev/linediff.vim'  " Diff two blocks of text
+" Plugin 'derekwyatt/vim-scala'  " Scala stuff
+" Plugin 'raichoo/haskell-vim'  " Haskell syntax
 
 " Colorschemes
 Plugin 'altercation/vim-colors-solarized'
@@ -70,23 +71,17 @@ set smartcase  " Use case sentive when contains caps
 
 syntax enable
 set t_Co=256
-if !has('nvim')
-    set noanti  " Turn off anti-aliasing
-endif
+set anti  " Turn off anti-aliasing
 
 set linespace=3  " Line spacing
-set guifont=Andale\ Mono:h12 " Set the font family and the font size
+set guifont=Menlo:h12 " Set the font family and the font size
 set background=dark
 if has("gui_running")
     set lines=999 columns=999  " Maximize window
     set guioptions-=T
-    colorscheme Dracula
+    colorscheme ron
 else
-    try
-        colorscheme Dracula
-    catch
-        colorscheme torte
-    endtry
+    colorscheme ron
 endif
 
 set tags=./tags,tags;$HOME  " Should find tags files now?
@@ -148,10 +143,10 @@ imap kj <ESC>
 nmap ,v :vsp $MYVIMRC<CR>
 
 " ---- Autocommands ---- "
-
-" Allow long lines in JS
-autocmd FileType javascript setl colorcolumn=0
+autocmd FileType javascript setl colorcolumn=0 " Allow long lines in JS
+autocmd FileType python setl colorcolumn=80
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
+autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
 
 " Expand tabs in Python
 au BufRead, BufNewFile *.py set expandtab

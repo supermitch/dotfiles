@@ -1,0 +1,37 @@
+#
+
+- Install Chrome
+- Install 1Password
+- Install Firefox
+  - Log into Firefox, sync settings
+- Install iTerm2
+  - Change font to Menlo
+- Test ZSH
+  - `echo $SHELL` -> `/bin/zsh`
+  - `zsh --version` -> `zsh 5.9 (x86_64-apple-darwin22.0)`
+- Install oh-my-zsh:
+- Install zsh shell integration: https://iterm2.com/documentation-shell-integration.html
+- Install Dracula iTerm2 theme https://draculatheme.com/iterm
+- Install homebrew
+  - brew install git
+  - brew install pyenv
+  - brew install --cask rectangle
+  - brew install xz (Python dependency)
+  - brew install fzf  # fuzzyfinder
+- Install VSCode
+  - Log into Github, sync settings
+  - Enable key repeat https://vimforvscode.com/enable-key-repeat-vim
+- Install VScode extensions
+  - Dracula Offical (theme)
+  - Pylance
+  - Flake8
+  - Vim: https://github.com/VSCodeVim/Vim#mac
+- Create ssh key
+- Add ssh key to Github accounts
+- Install pyenv: https://github.com/pyenv/pyenv
+  - `pyenv install 3.11.4`
+- App Store apps:
+  - Install Boop
+  - Install amphetamine
+- Install Vundle: https://github.com/VundleVim/Vundle.vim
+  - `vim +PluginInstall +qall`
